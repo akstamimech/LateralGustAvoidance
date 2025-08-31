@@ -9,7 +9,6 @@ from stable_baselines3 import SAC
 from stable_baselines3.common.vec_env import DummyVecEnv, VecNormalize
 from stable_baselines3.common.callbacks import EvalCallback
 
-# --- your env registration function must be importable here ---
 # Make sure this is the same function you used during training.
 from citation_env_gauss import register_citation_env
 
@@ -186,3 +185,4 @@ print("Test episode reward:", ep_reward)
 print(y_path[:-1])
 plt.plot(x_path[:-1], h_path[:-1])
 plt.show()
+
